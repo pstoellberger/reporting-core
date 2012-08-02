@@ -90,11 +90,14 @@ public class Examples {
 			ReportSpecification fixture2 = (ReportSpecification) um.unmarshal(new FileReader(TEST_XML));
 			
 			//json
+		
 			ObjectMapper mapper = new ObjectMapper();
 			String writeValueAsString = mapper.writeValueAsString(fixture);
 			System.out.println(writeValueAsString);
 			
 			ReportSpecification masterModel = mapper.readValue(writeValueAsString, ReportSpecification.class);
+			
+			System.out.println("Table model class= " +masterModel.getTableDefinition().getClass().getCanonicalName());
 			
 		}
 
