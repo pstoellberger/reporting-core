@@ -1,4 +1,4 @@
-reporting-core
-==============
+wizard-core
+===========
 
-report generator for saiku
+playground for the redesign of pentaho reporting wizard core
